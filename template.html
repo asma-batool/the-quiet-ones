@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Quiet Ones</title>
+<meta name="description" content="An interactive bedtime story for kids about the robots and spacecraft NASA left on the Moon, on Mars and in deep space. NASA Space Apps Challenge 2026.">
+<meta name="theme-color" content="#141938">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+/*STYLE*/
+</style>
+</head>
+<body class="on-title">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false" id="globalDefs"></svg>
+<div id="app">
+  <header class="topbar">
+    <div><button class="pill" id="menuBtn" type="button" aria-haspopup="dialog">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+      <span class="lbl-long">Menu</span><span class="lbl-short">Menu</span></button></div>
+    <div class="chapter-label" id="chapterLabel">The Quiet Ones</div>
+    <div class="right"><button class="pill" id="voiceBtn" type="button" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+      <span class="lbl-long">Read to me</span><span class="lbl-short">Read</span></button></div>
+  </header>
+  <main class="main">
+    <div class="book">
+      <div class="stage" id="stage" aria-label="Story picture. Tap to turn the page."></div>
+      <section class="page" id="page" aria-live="polite"></section>
+    </div>
+  </main>
+  <nav class="controls" aria-label="Story controls">
+    <button class="nav-btn" id="backBtn" type="button" aria-label="Back">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lbl">Back</span></button>
+    <div class="progress-wrap">
+      <div class="progress" role="progressbar" aria-label="Story progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar" id="bar"></div></div>
+      <div class="progress-text" id="progText"></div>
+    </div>
+    <button class="nav-btn" id="nextBtn" type="button"><span class="lbl">Next</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </nav>
+</div>
+<div class="overlay" id="overlay" aria-hidden="true"><div class="sheet" id="sheet" role="dialog" aria-modal="true"></div></div>
+<noscript><p style="padding:20px;color:#fff">This story needs JavaScript turned on.</p></noscript>
+<script>
+/*SCRIPT*/
+</script>
+</body>
+</html>
